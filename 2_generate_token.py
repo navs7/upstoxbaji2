@@ -4,7 +4,7 @@ api_key = open("api_key.txt", "r").read().strip()
 api_secret = open("api_secret.txt", "r").read().strip()
 uri = "https://account.upstox.com/developer/apps"
 ############# UPDATE THE 'code' VALUE HERE ####################
-code = "8jKGkO"
+code = "0qnJSv"
 #############################################################
 url = "https://api-v2.upstox.com/login/authorization/token"
 headers = {
