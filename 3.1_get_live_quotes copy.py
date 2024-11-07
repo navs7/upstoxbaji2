@@ -2,10 +2,10 @@ import upstox_client
 import time
 import pandas as pd
 
-file_path = 'ISIN.xlsx'
-df = pd.read_excel(file_path)
+input_file = 'ISIN.xlsx'
+df = pd.read_excel(input_file)
 # Fetch the top 10 rows from the 'ISIN' column
-top_ISIN = df['ISIN2'].head(10)
+top_ISIN = df['ISIN2'].head(20)
 instrument_keys = top_ISIN.tolist()
 print(instrument_keys)
 
