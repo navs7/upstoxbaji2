@@ -40,10 +40,10 @@ for i in instrument_keys:
     print("out: ", out)
 
 # Create a DataFrame
-columns = ["instrument", "timestamp", "open", "high", "low", "close", "volume", "unknown", "name"]
+columns = ["instrument", "timestamp", "open", "high", "low", "close", "volume", "unknown"]
 df_out = pd.DataFrame(out, columns=columns)
 # Select the relevant columns
-df_out = df_out[["instrument", "timestamp", "open", "high", "low", "close", "name"]]
+df_out = df_out[["instrument", "timestamp", "open", "high", "low", "close"]]
 
 # Write to an Excel file
 output_file = r"C:\Users\07nav\Downloads\upstoxbaji2\ohlc-output.xlsx"
