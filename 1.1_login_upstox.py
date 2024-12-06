@@ -45,8 +45,10 @@ api_key = open(api_key_file, "r").read().strip()
 api_secret = open(api_secret_file, "r").read().strip()
 uri = "https://account.upstox.com/developer/apps"
 url = "https://api-v2.upstox.com/login/authorization/token"
+# url = "https://api.upstox.com/v2/login/authorization/token"
+
 headers = {
-    "accept": "application/json",
+    "Accept": "application/json",
     "Api-Version": "2.0",
     "Content-Type": "application/x-www-form-urlencoded",
 }
@@ -59,7 +61,7 @@ data = {
 }
 response = requests.post(url, headers=headers, data=data)
 access_token = response.json()["access_token"]
-access_token_file = r"C:\Users\07nav\Downloads\upstoxbaji2\api_secret.txt"
+access_token_file = r"C:\Users\07nav\Downloads\upstoxbaji2\access_token.txt"
 print(
     access_token, file=open(access_token_file, "w")
 )  # write 'access-token' to txt file
