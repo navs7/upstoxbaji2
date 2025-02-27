@@ -5,7 +5,7 @@ import pandas as pd
 input_file = r"C:\Users\07nav\Downloads\upstoxbaji2\ISIN.xlsx"
 df = pd.read_excel(input_file)
 # Fetch the top 20 rows from the 'ISIN' column
-top_ISIN = df['ISIN2'].head(20)
+top_ISIN = df['ISIN3'].head(10)
 instrument_keys = top_ISIN.tolist()
 print(instrument_keys)
 
